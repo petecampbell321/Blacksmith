@@ -97,8 +97,8 @@ public class BlacksmithTrait extends Trait {
 			maxEnchantments = key.getInt("maximum-enchantments");
 		if (key.keyExists("extra-enchantments-chance"))
 			extraEnchantmentChance = key.getInt("extra-enchantment-chance");
-		if (key.keyExists("drop-item"))
-			dropItem = key.getBoolean("drop-item");
+		if (key.keyExists("dropitem"))
+			dropItem = key.getBoolean("dropitem");
 		if (key.keyExists("disable-cooldown"))
 			disablecooldown = key.getBoolean("disable-cooldown");
 		if (key.keyExists("disable-delay"))
@@ -226,7 +226,6 @@ public class BlacksmithTrait extends Trait {
 
 		@Override
 		public void run() {
-			player.sendMessage("dropitem:" + dropItem);
 			player.sendMessage( reforgeItemInHand() ? successMsg : failMsg);
 			if (npc.getEntity() instanceof Player)
 				((Player) npc.getEntity()).setItemInHand(null);
