@@ -1,1 +1,0 @@
-INDEX VERSION 1.126+C:\Documents and Settings\Charles\.ssh\Blacksmith\.metadata\.plugins\org.eclipse.jdt.core

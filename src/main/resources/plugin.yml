@@ -1,5 +1,0 @@
-name: Blacksmith
-author: aPunch
-version: 1.0
-main: net.instinxx.blacksmith.BlacksmithPlugin
-depend: [Citizens, Vault]
