@@ -1,0 +1,11 @@
+name: Blacksmith
+author: aPunch, jrbudda, HurricanKai
+version: 1.12
+main: net.apunch.blacksmith.BlacksmithPlugin
+depend: [Citizens, Vault]
+softdepend: [HyperConomy]
+
+commands:
+  blacksmithreload:
+    permission: blacksmith.reload
+    description: reloads the config file for Blacksmith
