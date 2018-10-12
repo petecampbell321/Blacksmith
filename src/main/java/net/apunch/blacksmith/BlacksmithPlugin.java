@@ -31,7 +31,6 @@ import regalowl.hyperconomy.bukkit.BukkitConnector;
 import regalowl.hyperconomy.inventory.HItemStack;
 import regalowl.hyperconomy.tradeobject.TradeObject;
 
-
 public class BlacksmithPlugin extends JavaPlugin {
 	public BlacksmithPlugin plugin;
 	private Settings config;
@@ -127,28 +126,28 @@ public class BlacksmithPlugin extends JavaPlugin {
 
 	public boolean isTool(ItemStack item) {
 		switch (item.getType()) {
-		case WOOD_PICKAXE:
-		case WOOD_SPADE:
-		case WOOD_HOE:
-		case WOOD_SWORD:
-		case WOOD_AXE:
+		case WOODEN_PICKAXE:
+			case WOODEN_SHOVEL:
+		case WOODEN_HOE:
+		case WOODEN_SWORD:
+		case WOODEN_AXE:
 		case STONE_PICKAXE:
-		case STONE_SPADE:
+		case STONE_SHOVEL:
 		case STONE_HOE:
 		case STONE_SWORD:
 		case STONE_AXE:
-		case GOLD_PICKAXE:
-		case GOLD_SPADE:
-		case GOLD_HOE:
-		case GOLD_SWORD:
-		case GOLD_AXE:
+		case GOLDEN_PICKAXE:
+		case GOLDEN_SHOVEL:
+		case GOLDEN_HOE:
+		case GOLDEN_SWORD:
+		case GOLDEN_AXE:
 		case IRON_PICKAXE:
-		case IRON_SPADE:
+		case IRON_SHOVEL:
 		case IRON_HOE:
 		case IRON_SWORD:
 		case IRON_AXE:
 		case DIAMOND_PICKAXE:
-		case DIAMOND_SPADE:
+		case DIAMOND_SHOVEL:
 		case DIAMOND_HOE:
 		case DIAMOND_SWORD:
 		case DIAMOND_AXE:
@@ -172,10 +171,10 @@ public class BlacksmithPlugin extends JavaPlugin {
 		case CHAINMAIL_CHESTPLATE:
 		case CHAINMAIL_LEGGINGS:
 		case CHAINMAIL_BOOTS:
-		case GOLD_HELMET:
-		case GOLD_CHESTPLATE:
-		case GOLD_LEGGINGS:
-		case GOLD_BOOTS:
+		case GOLDEN_HELMET:
+		case GOLDEN_CHESTPLATE:
+		case GOLDEN_LEGGINGS:
+		case GOLDEN_BOOTS:
 		case IRON_HELMET:
 		case IRON_CHESTPLATE:
 		case IRON_LEGGINGS:

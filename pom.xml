@@ -6,15 +6,15 @@
 
     <groupId>net.apunch</groupId>
     <artifactId>blacksmith</artifactId>
-    <version>1.12-SNAPSHOT</version>
+    <version>1.13-SNAPSHOT</version>
     <name>Blacksmith</name>
     <description>Blacksmith Character for the CitizensAPI</description>
 
     <!-- Properties -->
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <bukkit.version>1.10.2-R0.1-SNAPSHOT</bukkit.version>
-        <citizensapi.version>2.0.20-SNAPSHOT</citizensapi.version>
+        <bukkit.version>1.13.1-R0.1-SNAPSHOT</bukkit.version>
+        <citizensapi.version>2.0.24-SNAPSHOT</citizensapi.version>
         <vault.version>1.5.6</vault.version>
         <hyperconomy.version>0.975.7-SNAPSHOT</hyperconomy.version>
         <build.number>Unknown</build.number>
@@ -34,18 +34,14 @@
 			<id>vault-repo</id>
 			<url>http://nexus.hc.to/content/repositories/pub_releases</url>
 		</repository>
-		<repository>
-			<id>grokswell-repo</id>
-			<url>http://www.grokswell.com:8000/repo/</url>
-		</repository>
     </repositories>
 
     <!-- Dependencies -->
     <dependencies>
     	<dependency>
 			<groupId>net.citizensnpcs</groupId>
-			<artifactId>citizensapi</artifactId>
-			<version>2.0.22-SNAPSHOT</version>
+			<artifactId>citizens</artifactId>
+			<version>${citizensapi.version}</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
@@ -65,12 +61,23 @@
 			<groupId>regalowl.hyperconomy</groupId>
 			<artifactId>hyperconomy</artifactId>
 			<version>${hyperconomy.version}</version>
-			<scope>provided</scope>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/HyperConomy.jar</systemPath>
 		</dependency> 
     </dependencies>
 
     <!-- Build information -->
     <build>
+        <defaultGoal>clean package install</defaultGoal>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources</directory>
+                <includes>
+                    <include>*.yml</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

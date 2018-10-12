@@ -5,6 +5,8 @@ main: net.apunch.blacksmith.BlacksmithPlugin
 depend: [Citizens, Vault]
 softdepend: [HyperConomy]
 
+api-version: 1.13
+
 commands:
   blacksmithreload:
     permission: blacksmith.reload
