@@ -38,7 +38,7 @@ public class BlacksmithPlugin extends JavaPlugin {
 	private HyperAPI hyperAPI;
 	private BukkitConnector bukCon;
 	private boolean useHyperAPI = false;
-        //private boolean hasCititrader = false; // CitiTrader dependency outdated and broken
+	//private boolean hasCititrader = false; // CitiTrader dependency outdated and broken
 
 	@Override
 	public void onDisable() {
@@ -127,7 +127,7 @@ public class BlacksmithPlugin extends JavaPlugin {
 	public boolean isTool(ItemStack item) {
 		switch (item.getType()) {
 		case WOODEN_PICKAXE:
-			case WOODEN_SHOVEL:
+		case WOODEN_SHOVEL:
 		case WOODEN_HOE:
 		case WOODEN_SWORD:
 		case WOODEN_AXE:
@@ -151,6 +151,11 @@ public class BlacksmithPlugin extends JavaPlugin {
 		case DIAMOND_HOE:
 		case DIAMOND_SWORD:
 		case DIAMOND_AXE:
+		case NETHERITE_PICKAXE:
+		case NETHERITE_SHOVEL:
+		case NETHERITE_HOE:
+		case NETHERITE_SWORD:
+		case NETHERITE_AXE:
 		case BOW:
 		case FLINT_AND_STEEL:
 		case FISHING_ROD:
@@ -183,6 +188,10 @@ public class BlacksmithPlugin extends JavaPlugin {
 		case DIAMOND_CHESTPLATE:
 		case DIAMOND_LEGGINGS:
 		case DIAMOND_BOOTS:
+		case NETHERITE_HELMET:
+		case NETHERITE_CHESTPLATE:
+		case NETHERITE_LEGGINGS:
+		case NETHERITE_BOOTS:
 			return true;
 		default:
 			return false;
